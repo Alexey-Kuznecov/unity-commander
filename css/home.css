@@ -1,0 +1,442 @@
+
+/* =========================================================
+   Unity Commander Website
+   Home Page
+   ========================================================= */
+
+
+/* =========================================================
+   Hero
+   ========================================================= */
+
+.hero {
+    position: relative;
+
+    padding-top: 130px;
+    padding-bottom: 90px;
+
+    overflow: hidden;
+}
+
+
+/*
+   Very subtle background atmosphere.
+   No absolute positioning is used for layout itself.
+*/
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: -30% 20% auto;
+
+    height: 520px;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse,
+            color-mix(
+                in srgb,
+                var(--uc-accent-ribbon) 11%,
+                transparent
+            ),
+            transparent 68%
+        );
+
+    filter: blur(30px);
+}
+
+.hero-content {
+    position: relative;
+
+    max-width: 850px;
+
+    margin-inline: auto;
+
+    text-align: center;
+}
+
+.hero-badge {
+    width: fit-content;
+
+    margin-inline: auto;
+    margin-bottom: 26px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 6px 11px;
+
+    border: 1px solid var(--uc-border);
+
+    border-radius: 999px;
+
+    background: var(--uc-surface);
+
+    color: var(--uc-text-secondary);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #55C68A;
+
+    box-shadow:
+        0 0 0 4px
+        color-mix(
+            in srgb,
+            #55C68A 12%,
+            transparent
+        );
+}
+
+.hero-title {
+    max-width: 900px;
+
+    margin-inline: auto;
+    margin-bottom: 28px;
+
+    font-size: clamp(48px, 7vw, 84px);
+    font-weight: 750;
+
+    letter-spacing: -0.055em;
+}
+
+.hero-title span {
+    display: block;
+
+    color: var(--uc-text-secondary);
+}
+
+.hero-description {
+    max-width: 670px;
+
+    margin-inline: auto;
+    margin-bottom: 34px;
+
+    color: var(--uc-text-secondary);
+
+    font-size: clamp(17px, 2vw, 20px);
+    line-height: 1.7;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.hero-platform {
+    margin-top: 18px;
+    margin-bottom: 0;
+
+    color: var(--uc-text-muted);
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   Product Preview
+   ========================================================= */
+
+.product-preview {
+    padding-bottom: 120px;
+}
+
+.product-window {
+    overflow: hidden;
+
+    border: 1px solid var(--uc-border-strong);
+    border-radius: var(--uc-radius-xl);
+
+    background: var(--uc-surface);
+
+    box-shadow: var(--uc-shadow-large);
+}
+
+.window-header {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding-inline: 16px;
+
+    border-bottom: 1px solid var(--uc-border);
+
+    background: var(--uc-surface-secondary);
+}
+
+.window-header span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: var(--uc-text-muted);
+
+    opacity: 0.65;
+}
+
+.window-content {
+    background: var(--uc-background);
+}
+
+.window-content img {
+    width: 100%;
+}
+
+
+/* =========================================================
+   Introduction
+   ========================================================= */
+
+.introduction {
+    border-top: 1px solid var(--uc-border);
+}
+
+.introduction .section-heading {
+    margin-inline: auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   Features
+   ========================================================= */
+
+.features {
+    border-top: 1px solid var(--uc-border);
+}
+
+.features .section-heading {
+    margin-bottom: 52px;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   Philosophy
+   ========================================================= */
+
+.philosophy {
+    border-top: 1px solid var(--uc-border);
+}
+
+.philosophy-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(320px, 0.8fr);
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.philosophy-content {
+    max-width: 650px;
+}
+
+.philosophy-content h2 {
+    margin-bottom: 24px;
+
+    font-size: clamp(34px, 4vw, 54px);
+}
+
+.philosophy-content p {
+    max-width: 620px;
+
+    margin-bottom: 18px;
+
+    color: var(--uc-text-secondary);
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.philosophy-content p:last-child {
+    margin-bottom: 0;
+}
+
+.philosophy-highlight {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--uc-border);
+    border-radius: var(--uc-radius-large);
+
+    background: var(--uc-surface);
+
+    overflow: hidden;
+}
+
+.highlight-item {
+    padding: 24px 26px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    border-bottom: 1px solid var(--uc-border);
+}
+
+.highlight-item:last-child {
+    border-bottom: 0;
+}
+
+.highlight-item strong {
+    font-size: 18px;
+}
+
+.highlight-item span {
+    color: var(--uc-text-secondary);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   Beta CTA
+   ========================================================= */
+
+.beta-cta {
+    border-top: 1px solid var(--uc-border);
+}
+
+.cta-card {
+    padding: 72px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    border: 1px solid var(--uc-border);
+
+    border-radius: var(--uc-radius-xl);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--uc-surface),
+            var(--uc-surface-secondary)
+        );
+
+    box-shadow: var(--uc-shadow-small);
+}
+
+.cta-card .section-label {
+    margin-bottom: 16px;
+}
+
+.cta-card h2 {
+    max-width: 700px;
+
+    margin-bottom: 18px;
+
+    font-size: clamp(34px, 5vw, 54px);
+}
+
+.cta-card p {
+    max-width: 600px;
+
+    margin-bottom: 30px;
+
+    color: var(--uc-text-secondary);
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .philosophy-content {
+        max-width: 760px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    .hero-title {
+        font-size: clamp(42px, 12vw, 62px);
+    }
+
+    .hero-actions {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .product-preview {
+        padding-bottom: 80px;
+    }
+
+    .product-window {
+        border-radius: var(--uc-radius-large);
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        min-height: auto;
+    }
+
+    .cta-card {
+        padding: 54px 24px;
+    }
+
+}

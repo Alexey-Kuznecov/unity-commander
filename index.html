@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Unity Commander — a modern, powerful file manager for Windows."
+    >
+
+    <title>Unity Commander — Modern File Manager for Windows</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Header
+         ========================= -->
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a class="brand" href="index.html">
+                <span class="brand-icon">
+                    UC
+                </span>
+
+                <span class="brand-name">
+                    Unity Commander
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="nav-link active" href="index.html">
+                    Home
+                </a>
+
+                <a class="nav-link" href="download.html">
+                    Download
+                </a>
+
+                <a class="nav-link" href="support.html">Support</a>
+                
+                 <a class="nav-link" href="support-project.html">Support the Project</a>
+                <a
+                    class="nav-link"
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    GitHub
+                </a>
+            </nav>
+
+            <a class="header-download" href="download.html">
+                Download
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             Hero
+             ========================= -->
+
+        <section class="hero">
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        Public Beta
+                    </div>
+
+                    <h1 class="hero-title">
+                        A modern file manager
+                        <span>built for power users.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Unity Commander is a modern Windows file manager
+                        designed to make everyday file management faster,
+                        cleaner and more powerful.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="button button-primary"
+                            href="download.html"
+                        >
+                            Download Beta
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            View on GitHub
+                        </a>
+
+                    </div>
+
+                    <p class="hero-platform">
+                        Windows 10 / 11
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+            Product Screenshots
+            ========================= -->
+
+        <section class="product-preview">
+            <div c
+        lass="container">
+
+                <div class="product-gallery" data-gallery>
+
+                    <button
+                        class="gallery-main"
+                        type="button"
+                        data-gallery-open="0"
+                        aria-label="Open Unity Commander screenshot"
+                    >
+                        <div class="window-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="window-content">
+                            <img
+                                src="assets/images/unity-commander-main.png"
+                                alt="Unity Commander file manager interface"
+                                data-gallery-image
+                            >
+                        </div>
+                    </button>
+
+                    <div class="gallery-thumbnails" aria-label="Product screenshots">
+
+                        <button
+                            class="gallery-thumbnail active"
+                            type="button"
+                            data-gallery-open="0"
+                        >
+                            <img
+                                src="assets/images/unity-commander-main.png"
+                                alt="Unity Commander main interface"
+                            >
+                        </button>
+
+                        <button
+                            class="gallery-thumbnail"
+                            type="button"
+                            data-gallery-open="1"
+                        >
+                            <img
+                                src="assets/images/unity-commander-search.png"
+                                alt="Unity Commander search"
+                            >
+                        </button>
+
+                        <button
+                            class="gallery-thumbnail"
+                            type="button"
+                            data-gallery-open="2"
+                        >
+                            <img
+                                src="assets/images/unity-commander-light.png"
+                                alt="Unity Commander navigation"
+                            >
+                        </button>
+
+                        <button
+                            class="gallery-thumbnail"
+                            type="button"
+                            data-gallery-open="3"
+                        >
+                            <img
+                                src="assets/images/unity-commander-icon-maker.png"
+                                alt="Unity Commander Icon Maker"
+                            >
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+            Screenshot Lightbox
+            ========================= -->
+
+        <div
+            class="gallery-lightbox"
+            data-gallery-lightbox
+            aria-hidden="true"
+        >
+
+            <div class="gallery-lightbox-backdrop" data-gallery-close></div>
+
+            <div class="gallery-lightbox-content">
+
+                <button
+                    class="gallery-lightbox-close"
+                    type="button"
+                    data-gallery-close
+                    aria-label="Close screenshot"
+                >
+                    ×
+                </button>
+
+                <button
+                    class="gallery-lightbox-arrow gallery-lightbox-prev"
+                    type="button"
+                    data-gallery-prev
+                    aria-label="Previous screenshot"
+                >
+                    ‹
+                </button>
+
+                <img
+                    class="gallery-lightbox-image"
+                    data-gallery-lightbox-image
+                    src=""
+                    alt=""
+                >
+
+                <button
+                    class="gallery-lightbox-arrow gallery-lightbox-next"
+                    type="button"
+                    data-gallery-next
+                    aria-label="Next screenshot"
+                >
+                    ›
+                </button>
+
+                <div
+                    class="gallery-lightbox-counter"
+                    data-gallery-counter
+                >
+                    1 / 4
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             Introduction
+             ========================= -->
+
+        <section class="section introduction">
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Unity Commander
+                    </span>
+
+                    <h2>
+                        File management,
+                        <span>without the clutter.</span>
+                    </h2>
+
+                    <p>
+                        A fresh approach to Windows file management,
+                        combining a modern interface with powerful
+                        tools for everyday work.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             Features
+             ========================= -->
+
+        <section class="section features">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">
+                        Features
+                    </span>
+
+                    <h2>
+                        Everything you need.
+                    </h2>
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⬢
+                        </div>
+
+                        <h3>
+                            Modern interface
+                        </h3>
+
+                        <p>
+                            A clean, dark interface designed for
+                            comfortable everyday file management.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⇄
+                        </div>
+
+                        <h3>
+                            Powerful file operations
+                        </h3>
+
+                        <p>
+                            Copy, move, rename and manage files
+                            with tools designed for power users.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ◫
+                        </div>
+
+                        <h3>
+                            Flexible navigation
+                        </h3>
+
+                        <p>
+                            Work with multiple locations and navigate
+                            your filesystem efficiently.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ◆
+                        </div>
+
+                        <h3>
+                            Extensible architecture
+                        </h3>
+
+                        <p>
+                            A plugin-oriented architecture makes it
+                            possible to extend Unity Commander over time.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             Philosophy
+             ========================= -->
+
+        <section class="section philosophy">
+            <div class="container">
+
+                <div class="philosophy-grid">
+
+                    <div class="philosophy-content">
+
+                        <span class="section-label">
+                            The idea
+                        </span>
+
+                        <h2>
+                            Built to grow with you.
+                        </h2>
+
+                        <p>
+                            Unity Commander starts with the essentials:
+                            fast navigation, reliable file operations
+                            and a modern user experience.
+                        </p>
+
+                        <p>
+                            The architecture is designed to grow into
+                            a powerful, extensible file management
+                            platform without sacrificing simplicity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="philosophy-highlight">
+
+                        <div class="highlight-item">
+                            <strong>
+                                Modern
+                            </strong>
+
+                            <span>
+                                Windows experience
+                            </span>
+                        </div>
+
+                        <div class="highlight-item">
+                            <strong>
+                                Powerful
+                            </strong>
+
+                            <span>
+                                Tools for power users
+                            </span>
+                        </div>
+
+                        <div class="highlight-item">
+                            <strong>
+                                Extensible
+                            </strong>
+
+                            <span>
+                                Plugin-ready architecture
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             Beta CTA
+             ========================= -->
+
+        <section class="section beta-cta">
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <span class="section-label">
+                        Public Beta
+                    </span>
+
+                    <h2>
+                        Ready to try Unity Commander?
+                    </h2>
+
+                    <p>
+                        Download the latest Beta and help shape
+                        the future of Unity Commander.
+                    </p>
+
+                    <a
+                        class="button button-primary"
+                        href="download.html"
+                    >
+                        Download Beta
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Footer
+         ========================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <strong>
+                    Unity Commander
+                </strong>
+
+                <span>
+                    Modern file management for Windows.
+                </span>
+            </div>
+
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="download.html">
+                    Download
+                </a>
+              
+                <a href="support.html">Support</a>
+                
+                <a href="support-project.html">Support the Project</a>
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    GitHub
+                </a>
+
+            </nav>
+
+
+            <div class="footer-meta">
+                © 2026 Unity Commander
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+
